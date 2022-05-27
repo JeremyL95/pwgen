@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwgen</title>
+    <link rel="icon" href="icon/pin.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Password Generator</h2>
+        <div class="output-container">
+            <div class="popup">
+                <h4>Copied 📋</h4>
+            </div>
+            <span class="output"></span>
+            <button class="btn-copy">
+                <i class="far fa-clipboard fa-2x"></i>
+            </button>
+        </div>
+        <div class="settings-container">
+            <div class="setting">
+                <label for="length">Length</label>
+                <input type="number" id="length" min="4" max="20" value="8" />
+            </div>
+            <div class="setting">
+                <label for="uppercase">Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label for="lowercase">Lowercase Letters</label>
+                <input type="checkbox" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label for="numbers">Numbers</label>
+                <input type="checkbox" id="numbers" checked />
+            </div>
+            <div class="setting">
+                <label for="symbols">Symbols</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+            <button class="btn-generate">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
